@@ -1,5 +1,15 @@
-A privacy preserving ad network
 
+Description
+-----------
+cookbook-prototype is an implementation of a privacy perserving ad network that only stores tracking information within
+the browser. It supports essential ad network functionality such as retargeting,
+behavioral tracking, behavioral targeting, and frequency capping.
+
+This is joint work with Arvind Narayanan and Jonathan Mayer at Stanford.
+
+
+Running
+-------
 To run simply enter:
 ./runapp.py config.xml
 
