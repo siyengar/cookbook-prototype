@@ -1,0 +1,32 @@
+
+<!--
+Demo page 
+-->
+
+
+<style>
+body {
+    margin: 0;
+}
+</style>
+
+<script>
+
+function changeFrame(path){
+  var frame = document.getElementById("demoframe");
+  frame.src = path;
+}
+
+</script>
+
+<center>
+<button onclick="changeFrame('/purge/')">Start Over</button>
+<button onclick="changeFrame('/advertiser/1/')">Advertiser 1</button>
+<button onclick="changeFrame('/advertiser/2/')">Advertiser 2</button>
+<button onclick="changeFrame('/publisher/1/')">Publisher 1</button>
+<button onclick="changeFrame('/publisher/4/')">Publisher 2</button>
+<button onclick="changeFrame('/trackinfo/')">Track Profile</button>
+</center>
+
+
+<iframe id = "demoframe" src="/advertiser/1/" style="border: 0; width: 100%; height: 100%"></iframe>

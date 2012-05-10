@@ -1,0 +1,277 @@
+<!--
+This script receives as input:
+1. The retargeted ads from localStorage
+2. The normal display ads from the server
+
+This does the bidding in a worker thread to decide on 
+which ad to display based on the user profile, the
+segments each ad belongs to, and the bid for the ad 
+
+-->
+
+<div id = "ad"></div>
+
+<script id = "worker" type = "javascript/worker">
+// Worker thread which does the ad targeting
+
+// simple targeting function. Just chooses ad with maximum score
+function processAd(ads, v_counter, c_counter, d_counter, t_counter){
+	var v_weight = 0.4;
+	var c_weight = 0.5;
+	var d_weight = 0.1;
+
+	// using == here instead of === since this handles the case of null
+	if (t_counter == undefined)
+		t_counter = new Object();
+
+	var v_total = t_counter['v'];
+	if (v_total == undefined) v_total = 1;
+
+	var c_total = t_counter['c'];
+	if (c_total == undefined) c_total = 1;
+
+	var d_total = t_counter['d'];
+	if (d_total == undefined) d_total = 1;
+	
+	var maxScore = -Infinity;
+	var maxIndex = -1;
+	
+	for (var i in ads){
+		var score = 0;
+		var ad = ads[i];
+		if (ad.frequency != undefined && parseInt(ad.frequency) <= 0){
+			throw ad.frequency;	
+			continue;
+		}
+		for (var j in ad.segments){
+			var segment = ad.segments[j];
+	
+			var v_seg_score = 0, c_seg_score = 0, d_seg_score = 0;	
+			if (v_counter != undefined && v_counter[segment] != undefined)
+				v_seg_score = v_counter[segment] / v_total;	
+			if (c_counter != undefined && c_counter[segment] != undefined)
+				c_seg_score = c_counter[segment] / c_total;
+			if (d_counter != undefined && d_counter[segment] != undefined)
+				d_seg_score = d_counter[segment] / d_total;
+			
+			score += v_weight * v_seg_score + 
+								c_weight * c_seg_score + 
+									d_weight * d_seg_score; 
+		} 
+		score *= ad.bid;
+		if (score > maxScore){
+			maxScore = score;
+			maxIndex = i;
+		}
+	}
+
+	return [maxIndex, maxScore];	
+}
+
+
+// More complicated targeting function (the one we use). Uses roulette
+// Wheel selection to select the ads
+function processAd2(ads, v_counter, c_counter, d_counter, t_counter){
+	var v_weight = 0.4;
+	var c_weight = 0.5;
+	var d_weight = 0.1;
+
+	// using == here instead of === since this handles the case of null
+	if (t_counter == undefined)
+		t_counter = new Object();
+
+	var v_total = t_counter['v'];
+	if (v_total == undefined) v_total = 1;
+
+	var c_total = t_counter['c'];
+	if (c_total == undefined) c_total = 1;
+
+	var d_total = t_counter['d'];
+	if (d_total == undefined) d_total = 1;
+	
+	var totalScore = 0;	
+	var scores = [];
+	
+	for (var i in ads){
+		var score = 0;
+		var ad = ads[i];
+		if (ad.frequency == undefined){
+			ad.frequency = 1;
+		}
+		if (parseInt(ad.frequency) <= 0){
+			scores.push(0);
+			continue;
+		}
+		
+		for (var j in ad.segments){
+			var segment = ad.segments[j];
+	
+			var v_seg_score = 0, c_seg_score = 0, d_seg_score = 0;	
+			if (v_counter != undefined && v_counter[segment] != undefined)
+				v_seg_score = v_counter[segment] / v_total;	
+			if (c_counter != undefined && c_counter[segment] != undefined)
+				c_seg_score = c_counter[segment] / c_total;
+			if (d_counter != undefined && d_counter[segment] != undefined)
+				d_seg_score = d_counter[segment] / d_total;
+			
+			score += v_weight * v_seg_score + 
+								c_weight * c_seg_score + 
+									d_weight * d_seg_score; 
+		} 
+		score *= ad.bid;
+		totalScore += score;
+		scores.push(score);
+	}
+
+	// roulette wheel selection
+	var random = Math.random();
+	var maxIndex = -1;
+	var maxScore = 0;
+	var runningSum = 0;
+	for (var i in scores){
+		var normalizedScore = scores[i] / totalScore;
+		runningSum += normalizedScore;
+		if (runningSum > random){
+			maxIndex = i;	
+			maxScore = scores[i];
+			break;
+		}
+	}		
+	return [maxIndex, maxScore];	
+}
+
+// main method for worker thread
+self.onmessage = function(e){
+	var retargetAds = e.data[0];
+	var normalAds = e.data[1];
+	var v_counter = e.data[2];
+	var c_counter = e.data[3];
+	var d_counter = e.data[4];	
+	var t_counter = e.data[5];
+
+	// this is a hack to support chrome, apparently chrome doesnt support multiple 
+	// values from a function
+
+	maxR = processAd2(retargetAds, v_counter, 
+                   c_counter, d_counter, t_counter);
+
+	maxRIndex = maxR[0];
+	maxRScore = maxR[1];
+
+	maxN = processAd2(normalAds, v_counter, 
+                   c_counter, d_counter, t_counter);
+
+	maxNIndex = maxN[0];
+	maxNScore = maxN[1];
+
+	var action = 'retarget';
+	var maxScore = maxRScore;
+	var maxIndex = maxRIndex;
+
+	if (maxNScore > maxRScore){
+		action = 'normal';
+		maxScore = maxNScore;
+		maxIndex = maxNIndex;
+	}
+
+	if (maxRIndex == -1 && maxNIndex == -1){	
+		action = 'normal';
+		maxScore = maxNScore;
+		maxIndex = maxNIndex;
+	}
+
+	self.postMessage([action, maxIndex, maxScore]);
+}
+</script>
+<script> 
+
+// create the worker
+var userAgent = navigator.userAgent;
+if (userAgent.indexOf('Firefox') != -1){
+  window.BlobBuilder = MozBlobBuilder;
+}
+else if (userAgent.indexOf('WebKit') != -1){
+  window.BlobBuilder = WebKitBlobBuilder;
+	window.URL = window.webkitURL;
+}
+else
+  throw "unsupported browser";
+
+var bb = new BlobBuilder();
+
+var blobText = document.querySelector('#worker').textContent; 
+bb.append(blobText);
+var objURL = window.URL.createObjectURL(bb.getBlob());
+
+var worker = new Worker(objURL);
+
+
+if (localStorage.ads != undefined)
+	var retargetAds = JSON.parse(localStorage.ads);
+else 
+	var retargetAds = [];
+
+var normalAds = $normalads;
+
+//console.log(normalAds);
+
+var v_counter = null, c_counter = null, d_counter = null, t_counter = null;
+
+
+if (localStorage['c'] != undefined)
+	var v_counter = JSON.parse(localStorage['v']);
+
+if (localStorage['c'] != undefined)
+	var c_counter = JSON.parse(localStorage['c']);
+
+if (localStorage['d'] != undefined)
+	var d_counter = JSON.parse(localStorage['d']);
+
+
+if (localStorage['t'] != undefined)
+	var t_counter = JSON.parse(localStorage['t']);
+
+
+console.log(retargetAds);
+
+worker.postMessage([retargetAds, normalAds, 
+                    v_counter, c_counter, 
+                    d_counter, t_counter]);
+
+
+// shows the ad once it is selected
+function showAd(id){
+	window.location.href = '/getad/' + id + '/';
+}
+
+// if a retargeted ad is selected, this handles 
+// ad display
+function handleRetarget(maxIndex){
+	retargetAds[maxIndex].frequency--;
+	console.log('reduced freq of ad ' + maxIndex);
+	localStorage.ads = JSON.stringify(retargetAds);
+	showAd(retargetAds[maxIndex].id);
+}
+
+// if a normal ad is selected, this handles
+// ad display
+function handleNormal(maxIndex){
+	showAd(normalAds[maxIndex].id);	
+}
+
+// callback once the worker is done
+worker.onmessage = function(e){
+	var action = e.data[0], maxIndex = e.data[1], maxScore = e.data[2];
+	console.log(action + ';' + maxIndex + ';' + maxScore);
+	if (maxIndex > -1){
+		if (action == 'retarget'){
+			handleRetarget(maxIndex);			
+		} else if (action == 'normal'){
+			handleNormal(maxIndex);
+		}
+	}
+}
+
+</script>
+
+

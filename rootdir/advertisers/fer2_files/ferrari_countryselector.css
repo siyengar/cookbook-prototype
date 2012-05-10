@@ -1,0 +1,23 @@
+﻿.fer_countryselector
+{
+    background-color:#333333;
+}
+
+.fer_console 
+{
+    margin:0 auto;
+    width:1024px;
+    background-color:#999999;
+}
+.fer_siteaction
+{
+    float:left;
+}
+.fer_welcome
+{
+    float:right;
+}
+.fer_cl 
+{
+    clear:both;
+}

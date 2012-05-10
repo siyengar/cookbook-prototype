@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+html, body {text-align:center; font-family:Tahoma,Arial,Helvetica,sans-serif; background:#333 none scroll no-repeat 0 0;}
+body {font-size:12px; color:#FFF; behavior:url(/Style Library/CountrySelector/Gateway/css/csshover.htc);}
+hr.invisible {display:none;}
+.cleared:after {clear:both; visibility:hidden; display:block; content:"."; height:0;}
+.cleared {clear:both; height:1%;}
+
+/* STRUTTURA */
+#FwrppR {margin:0; border:0 none; padding:0; position:relative; width:100%;}
+.page {position:relative; margin:0 auto; width:970px; text-align:left; z-index:1;}
+.side-menu {position:absolute; top:0; width:164px; z-index:3}
+.focus-on { bottom:0; left:99px; display:none; padding:12px 15px 11px 16px; width:131px; background:#000; z-index:2}
+.related-content {position:absolute; opacity:.9; /*-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; filter:alpha(opacity=90);*/ -khtml-opacity:.9; -moz-opacity:.9;}
+.footer {margin:2px 0 0; height:26px; font-size:11px; line-height:15px; color:#7E7E7E; background:#282828;}
+
+/* CAROUSEL BACKGROUND */
+.back-ground-CTR {position:absolute; top:0; left:0; width:100%; overflow:hidden; background:transparent url(../gfx/sprite6.gif) no-repeat 50% 263px; z-index:0;}
+.back-ground-CTR .back-ground-CNT {position:relative; display:none; height:100%; background:transparent none no-repeat 50% 0; }
+.back-ground-CTR .back-ground-CNT a {display:block; width:100%; height:100%;}
+
+/* SIDE MENU */
+.side-menu .topsx h1 {}
+.side-menu .topsx ul {margin:10px 0;}
+.side-menu .topsx ul li {position:relative; margin:5px 0 0; font-weight:bold; font-size:13px; color:#FFF; background:#000 url(../gfx/bkg-context-mnu.jpg) no-repeat 100% 100%; opacity:.9; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; filter:alpha(opacity=90); -khtml-opacity:.9; -moz-opacity:.9;}
+.side-menu .topsx ul li a {position:relative; display:block; border:1px solid #000; padding:1px 4px 1px 15px; height:28px; line-height:28px; color:#FFF; text-decoration:none; background:transparent url(../gfx/ico-mnu-lnk.gif) no-repeat 135px 11px; z-index:5;}
+.side-menu .topsx ul li a:hover {border:2px solid #FC0; padding:0 3px 0 14px; color:#FC0; background-position:134px -23px;}
+.side-menu .topsx ul li.more {}
+.side-menu .topsx ul li.more a {background-position:140px -54px;}
+.side-menu .topsx ul li.more a:hover {background-position:139px -55px;}
+.side-menu .topsx ul li.more a.active {margin-right:-5px; border:2px solid #FC0; border-right:0 none; padding:0 3px 0 15px; color:#FC0; background-color:#000; background-position:139px -88px!important;}
+/* context menu */
+.side-menu .topsx ul li.more .context-mnu {position:absolute; top:-26px; left:167px; display:none; border:2px solid #FC0; background:#000 url(../gfx/bkg-context-mnu.jpg) no-repeat 100% 100%; z-index:4;}
+.side-menu .topsx ul li.more .context-mnu ul {border:1px solid #000; padding:7px 3px;}
+.side-menu .topsx ul li.more .context-mnu ul li {margin:0; background:transparent none no-repeat 0 0;}
+.side-menu .topsx ul li.more .context-mnu ul li a {border:0 none; padding:0 15px 0 25px; height:20px; line-height:20px; white-space:nowrap; background:transparent url(../gfx/ico-mnu-lnk.gif) no-repeat 3px 6px;}
+.side-menu .topsx ul li.more .context-mnu ul li a:hover {background-position:3px -27px;}
+
+/* FOCUS ON */
+.focus-on h3 {padding:0 0 2px; font-size:13px; line-height:14px; color:#FFF;}
+.focus-on .focus-on-CNT {position:relative; width:131px; overflow:hidden;}
+.focus-on .focus-on-CNT ul {position:relative; overflow:hidden;}
+.focus-on .focus-on-CNT ul li {position:relative; padding:4px 0; height:55px; overflow:hidden;}
+.focus-on .focus-on-CNT ul li a {position:relative; display:block; width:131px; height:55px; overflow:hidden;}
+.focus-on .focus-on-CNT ul li a img {}
+.focus-on .focus-on-CNT ul li a span {position:absolute; top:0; left:0; margin:2px; border:0 none; width:127px; height:51px; text-indent:-99999em; cursor:pointer;}
+.focus-on .focus-on-CNT ul li a:hover span,
+.focus-on .focus-on-CNT ul li a.active span {margin:0; border:2px solid #FC0;}
+.focus-on .focus-on-CNT ul li a.inactive {opacity:.33; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=33)"; filter:alpha(opacity=33); -khtml-opacity:.33; -moz-opacity:.33; cursor:default;}
+.focus-on .focus-on-CNT ul li a.inactive span {margin:2px!important; border:0 none!important; cursor:default!important;}
+
+/* RELATED CONTENT */
+.related-content-box-top {top:0;}
+.related-content-box-bottom {bottom:0;}
+.related-content .related-content-CNT {display:none; padding:20px 17px; background:#050607 url(../gfx/bkg-related-content.gif) repeat-x 0 100%;}
+.related-content h2 {padding:0 12px 8px; font-weight:normal; font-size:38px; color:#FFF; white-space:nowrap;}
+.related-content .abstract {}
+.related-content .abstract p {padding:0 12px 8px; line-height:14px; color:#D2D2D2; font-size:20px;}
+.related-content .abstract ul {padding:0 12px 8px; padding-top:10px;}
+.related-content .abstract ul li {padding:8px 0 0;}
+.related-content .abstract ul li a {padding:0 0 0 23px; line-height:14px; color:#D2D2D2; text-decoration:none; background:transparent url(../gfx/ico-mnu-lnk.gif) no-repeat -1px -132px;}
+.related-content .abstract ul li a:hover {color:#FFF;}
+.related-content .transparent-box {background:transparent none no-repeat 0 0;}
+
+/* FOOTER */
+.footer-CNT {margin:0 auto; padding:6px 0 0 0;}
+.footer-CNT .localization {float:left; display:inline;}
+.footer-CNT .related-links {float:right; display:inline;}
+.footer-CNT ul {}
+.footer-CNT ul li {float:left; display:inline; padding:0 10px; border-left:1px solid #727272;}
+.footer-CNT ul li.first-elm {border:0 none;}
+.footer-CNT ul li a {float:left; display:inline; color:#7E7E7E; text-decoration:none;}
+.footer-CNT ul li a.fnc-lnk {padding:0 20px 0 0; background:transparent url(../gfx/ico-mnu-lnk.gif) no-repeat 100% -165px;}
+.footer-CNT ul li a:hover {color:#FFF;}
+.footer-CNT ul li a img {margin:0 3px; vertical-align:middle;}
+
+/* SHAREPOINT FIX */
+.ms-MenuUIPopupBody {z-index:999999; text-align:left;}
+.ms-MenuUILabel {vertical-align:top;}

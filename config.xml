@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<app-config>
+	<deployment>
+		<config>wsgiref_config.xml</config> 
+	</deployment>
+	<application>
+		<stage>
+			<module>adnetwork</module>
+			<app>AdServer</app>
+		</stage>
+	</application>
+</app-config>

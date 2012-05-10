@@ -1,0 +1,38 @@
+<!--
+Pushes the retargeted ads into the localStorage
+-->
+
+
+<script>
+	function contains(arr, element){
+		for (var i in arr){
+			if (arr[i] == element)
+				return true;
+		}
+		return false;
+	}
+
+	jsonString = $json;
+	console.log(jsonString);
+	if (localStorage.ads != undefined)
+		adObjects = JSON.parse(localStorage.ads);
+	else
+		adObjects = [];
+
+	if (localStorage.adids != undefined)
+		adIds = JSON.parse(localStorage.adids);
+	else
+		adIds = [];
+
+	for (var i in jsonString){
+		ad = jsonString[i];
+		adid = ad.id;
+		if (!contains(adIds, adid)){
+			adIds.push(adid);
+			adObjects.push(ad);
+		}
+	}
+	localStorage.ads = JSON.stringify(adObjects);
+	localStorage.adids = JSON.stringify(adIds);
+</script>
+

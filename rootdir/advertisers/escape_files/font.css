@@ -1,0 +1,10 @@
+/*!
+This CSS resource incorporates links to font software which is the valuable copyrighted property of WebType LLC,
+The Font Bureau, Monotype Imaging and/or their suppliers. You may not attempt to copy, install, redistribute,
+convert, modify or reverse engineer this font software. Please contact WebType with any questions:
+http://www.webtype.com
+*/
+/*@import url(compressed/font.css);*/
+@import url(condensed/font.css);
+@import url(regular/font.css);
+@import url(small/font.css);

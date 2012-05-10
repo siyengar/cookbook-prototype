@@ -1,0 +1,102 @@
+<!-- 
+Shows the data stored about the 
+user in a convinient format
+-->
+
+
+<script>
+segments = $segments; 
+</script>
+
+<center> 
+<h2>Your track profile</h2>
+
+
+<table border = 1>
+<tr><td colspan = 2><center><h4>Your visit profile</h4></center></td></tr>
+<tr><td>Segment</td><td>Number of visits</td></tr>
+<script>
+if (localStorage.v != undefined){
+var v = JSON.parse(localStorage.v);
+for (var i in v){
+	document.write('<tr>');
+	document.write('<td>' + i + '</td>');
+	document.write('<td>' + v[i] + '</td>');
+	document.write('</tr>');
+}
+}else{
+	document.write('You have no Visits');
+}
+
+</script>
+<table>
+<p></p>
+
+<table border = 1>
+<tr><td colspan = 2><center><h4>Your click profile</h4></center></td></tr>
+<tr><td>Segment</td><td>Number of clicks</td></tr>
+<script>
+if (localStorage.c != undefined){
+var c = JSON.parse(localStorage.c);
+for (var i in c){
+	document.write('<tr>');
+	document.write('<td>' + i + '</td>');
+	document.write('<td>' + c[i] + '</td>');
+	document.write('</tr>');
+}
+}else{
+	document.write('You have no Clicks');
+}
+</script>
+<table>
+
+<p></p>
+<table border = 1>
+<tr><td colspan = 2><center><h4>Your duration of visit profile</h4></center></td></tr>
+<tr><td>Segment</td><td>Duration of Visit</td></tr>
+<script>
+if (localStorage.d != undefined){
+var d = JSON.parse(localStorage.d);
+for (var i in d){
+	document.write('<tr>');
+	document.write('<td>' + i + '</td>');
+	document.write('<td>' + d[i] + '</td>');
+	document.write('</tr>');
+}
+}else{
+	document.write('You have no Visits');
+}
+</script>
+<table>
+
+<p></p>
+
+<h3>Your ads</h3>
+</center>
+<table>
+<script>
+document.write('<tr>');
+var ads = JSON.parse(localStorage.ads);
+for (var i in ads){
+	var ad = ads[i];
+	document.write('<td>');
+	document.write('<iframe width = 300 height = 220 src = "/getad/' + ad.id + '/"></iframe>');
+	document.write('<br>');
+	document.write('<b>segments:</b>');
+	document.write('<br>');
+	document.write(ad.segments);
+	document.write('<br>');
+	document.write('<b>frequency left: </b>');	
+	document.write(ad.frequency);
+	document.write('<br>');
+	document.write('<b>bid: </b>');
+	document.write(ad.bid);
+	document.write('</td>');
+}
+document.write('</tr>');
+
+</script>
+
+
+
+

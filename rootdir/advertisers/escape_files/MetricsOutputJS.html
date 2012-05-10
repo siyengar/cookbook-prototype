@@ -1,0 +1,2397 @@
+
+
+
+oMetricsTracker.pageMetrics = function(){
+
+			 this.clearVars();
+			s.pageName=this.brandVar() + ": vehicle: home: "+this.nameplate();
+			s.eVar11=  this.brandVar() + ": vehicle: home"; 
+			s.prop11= this.brandVar() + ": vehicle: home"; 
+			s.prop48= ""; 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+		 void(s.t());
+
+			dartTracker.trackEvent(''+this.vehicleHomepageTag()+'', this.nameplate(), 1, this.getBrandType(), this.revealNameplate());
+
+
+}
+
+
+		 oMetricsTracker.syncLifeVideo=function(){
+			 this.clearVars();
+			s.hier1= "awareness:features:sync:life with sync";
+			s.eVar11= this.brandVar()  + ":tech:sync:life with sync"; 
+			s.prop11= this.brandVar()  + ":tech:sync:life with sync"; 
+			s.channel= "awareness"; 
+			s.prop5= "sync: video: "+ this.syncVideo; 
+			s.eVar48= ""; 
+			s.eVar49= ""; 
+			s.prop48= ""; 
+			s.prop49= ""; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  +":tech:sync:life with sync:video");
+		 }
+		 oMetricsTracker.syncLifeWithSync=function(){
+			 this.clearVars();
+			s.channel= "awareness"; 
+			s.hier1= "awareness:features:sync:life with sync"; 
+			s.eVar11= this.brandVar() + ":tech:sync:life with sync"; 
+			s.prop11= this.brandVar() + ":tech:sync:life with sync"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  +":tech:sync:life with sync:" + this._lwsCategory);
+		 }
+		 oMetricsTracker.syncInterstitialExit=function(){
+			 this.clearVars();
+			s.hier1= "awareness:features:sync:interstitial";
+			s.eVar11= this.brandVar()  + ":interstitial:sync"; 
+			s.prop11= this.brandVar()  + ":interstitial:sync"; 
+			s.channel= "awareness"; 
+			s.eVar11= this.brandVar()  + ":interstitial:sync"; 
+			s.prop11= this.brandVar()  + ":interstitial:sync"; 
+			s.eVar6= "ln: sync"; 
+			s.prop6= "ln: sync"; 
+			s.prop5= "sync: referral: ln: sync"; 
+			s.prop48= ""; 
+			s.prop49= ""; 
+			s.events= "event43"; 
+			s.linkTrackEvents= "event43"; 
+			s.events= "event4"; 
+			s.linkTrackEvents= "event4"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'e',"exit referral");
+		 }
+		 oMetricsTracker.syncPhone=function(){
+			 this.clearVars();
+			s.channel= "awareness"; 
+			s.hier1= "awareness:features:sync:home";
+			s.pageName= this.brandVar()  + ":tech:sync:home:phone compatilbility"; 
+			s.eVar11= this.brandVar()  + ":tech:sync:home:phone compatilbility"; 
+			s.prop11= this.brandVar()  + ":tech:sync:home:phone compatilbility"; 
+			s.eVar48= ""; 
+			s.eVar49= ""; 
+			s.prop48= ""; 
+			s.prop49= ""; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.t();
+		 }
+		 oMetricsTracker.syncLandingVideo=function(){
+			 this.clearVars();
+			s.eVar11= this.brandVar()  + ":tech:sync:home"; 
+			s.prop11= this.brandVar()  + ":tech:sync:home"; 
+			s.prop5= "sync: video: "+ this.syncVideo; 
+			s.hier1= "awareness:features:sync:home";
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +":tech:sync:home:video");
+		 }
+		 oMetricsTracker.syncCommandCategory=function(){
+			 this.clearVars();
+			s.channel= "awareness"; 
+			s.hier1= "awareness:features:sync:commands";
+			s.pageName= this.brandVar()  + ":tech:sync:commands:"+this.getSyncCmdCategory(); 
+			s.eVar11=  this.brandVar()  + ":tech:sync:commands:"+this.getSyncCmdCategory();  
+			s.prop11=  this.brandVar()  + ":tech:sync:commands:"+this.getSyncCmdCategory(); 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.t();
+		 }
+		 oMetricsTracker.syncCommandClick=function(){
+			 this.clearVars();
+			s.channel= "awareness"; 
+			s.hier1= "awareness:features:sync:commands";
+			s.eVar11=  this.brandVar()  + ":tech:sync:commands:"+this.getSyncCmdCategory();  
+			s.prop11=  this.brandVar()  + ":tech:sync:commands:"+this.getSyncCmdCategory(); 
+			s.prop5= "sync:commands:"+this.getSyncCmdSubcategory();
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this, 'o', this.brandVar() + ":tech:sync:commands");
+		 }
+		 oMetricsTracker.syncCommandSeeMore=function(){
+			 this.clearVars();
+			s.channel= "awareness"; 
+			s.hier1= "awareness:features:sync:commands";
+			s.pageName= this.brandVar()  + ":tech:sync:commands:see more" 
+			s.eVar11=  this.brandVar()  + ":tech:sync:commands:see more" 
+			s.prop11=  this.brandVar()  + ":tech:sync:commands:see more" 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.t();
+		 }
+		 oMetricsTracker.syncCommandSeeMorePDF=function(){
+			 this.clearVars();
+			s.channel= "awareness"; 
+			s.hier1= "awareness:features:sync:commands";
+			s.pageName= this.brandVar()  + ":tech:sync:commands:see more" 
+			s.eVar11=  this.brandVar()  + ":tech:sync:commands:see more" 
+			s.prop11=  this.brandVar()  + ":tech:sync:commands:see more" 
+			s.prop5= "sync: pdf"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'d',this.brandVar()  +":tech:sync:commands:pdf");
+		 }
+		 oMetricsTracker.syncLogin=function(){
+			 this.clearVars();
+			s.channel= "awareness";
+			s.hier1= "awareness:features:sync";
+			s.eVar11= this.brandVar()  + ":tech:sync:" + this.syncPackageName;
+			s.prop11= this.brandVar()  + ":tech:sync"; 
+			s.prop5= "sync: mysync: login start";
+			s.pageName= this.syncPackageName 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this, 'o', this.brandVar() + ":tech:sync:login");
+		 }
+		 oMetricsTracker.syncConfigLightBoxOpen=function(){
+			 this.clearVars();
+			s.channel= "awareness"; 
+			s.hier1= "awareness:features:sync:config"; 
+			s.eVar11= this.brandVar() + ":tech:sync:config:" + this.syncConfigPageName(); 
+			s.prop11= this.brandVar() + ":tech:sync:config:" + this.syncConfigPageName(); 
+			s.prop5= "sync: expand image"; 
+			s.prop48= "experience"; 
+			s.prop49= "sync"; 
+			s.events= "event43"; 
+			s.linkTrackEvents= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  +":tech:sync:config:packages:" + this.syncPackageName + ":image");
+		 }
+		 oMetricsTracker.featureVideoClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() + ": vehicle: feature: " +this.featureCategoryName() + ": " + this.featureName()+ ": video: " +this.nameplate(); 
+			s.prop11= this.brandVar() + ": vehicle: feature: " +this.featureCategoryName() + ": " + this.featureName()+ ": video: " +this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar() + ": vehicle: feature: " +this.featureCategoryName() + ": " + this.featureName() + ": video: " +this.nameplate());
+		 }
+		 oMetricsTracker.photoviewlargerClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') + this.getGalleryDataRoot('galleryCat') ; 
+			s.prop11= this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') + this.getGalleryDataRoot('galleryCat') ; 
+			s.prop5=  this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": view larger: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: "+ this.getGalleryData('galleryName') + this.getGalleryDataRoot('galleryCat')  +": view larger: " + this.nameplate());
+		 }
+		 oMetricsTracker.galleryOptionClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') + this.getGalleryDataRoot('galleryCat') ; 
+			s.prop11= this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') + this.getGalleryDataRoot('galleryCat') ; 
+			s.prop5=  this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": download: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'d',this.brandVar()  +": vehicle: gallery: "+ this.getGalleryData('galleryName') + this.getGalleryDataRoot('galleryCat') +": download: "+ this.nameplate());
+			dartTracker.trackEventsEfficient('downld');
+		 }
+		 oMetricsTracker.photopopupClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +this.getGalleryDataRoot('galleryCat') ; 
+			s.prop11= this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +this.getGalleryDataRoot('galleryCat') ; 
+			s.prop5=  this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": full screen: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: "+ this.getGalleryData('galleryName') +this.getGalleryDataRoot('galleryCat') +": full screen: " + this.nameplate());
+		 }
+		 oMetricsTracker.videoviewlargerClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +this.getGalleryDataRoot('galleryCat') ; 
+			s.prop11= this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +this.getGalleryDataRoot('galleryCat') ; 
+			s.prop5=  this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": view larger: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: "+ this.getGalleryData('galleryName') +this.getGalleryDataRoot('galleryCat') +": view larger: " + this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Click_disclaimer=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop5=  "disclaimer: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: disclaimer: "+ this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Event_onRoofClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360: roof"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360: roof"; 
+			s.prop5= this.getGalleryData('Roof') + ": " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: roof: change: "+ this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Event_onColorClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop5= "color change: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: colorizor: change: "+ this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Event_videoplay=function(){
+			 this.clearVars();
+			s.channel="vehicle";
+			s.hier1="vehicle:gallery:"+this.modelYear()+":"+this.modelCategory()+":"+this.nameplate();
+			s.pageName=this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": intro video: "+this.nameplate();
+			s.eVar11=  this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": intro video"; 
+			s.prop11=  this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": intro video"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			void(s.t());
+		 }
+		 oMetricsTracker.gallery360_Event_videoskip=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360: intro video"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360: intro video"; 
+			s.prop5=  "skip 360 intro: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: intro video: skip: "+ this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Event_roofsplay=function(){
+			 this.clearVars();
+			s.channel="vehicle";
+			s.hier1="vehicle:gallery:"+this.modelYear()+":"+this.modelCategory()+":"+this.nameplate();
+			s.pageName=this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": roof: "+this.nameplate();
+			s.eVar11=  this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": roof"; 
+			s.prop11=  this.brandVar() +": vehicle: gallery: "+ this.getGalleryData('galleryName') +": roof"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			void(s.t());
+		 }
+		 oMetricsTracker.gallery360_Event_roofsskip=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360: roof"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360: roof"; 
+			s.prop5=  "skip 360 roof: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: roof video: skip: "+ this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Event_onBackgroundChange=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop5= "change background: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: background: "+ this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Event_onTrimChange=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop5= "change trim: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: trim: "+ this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Event_fullscreen=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop5= "fullscreen: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: fullscreen: "+ this.nameplate());
+		 }
+		 oMetricsTracker.gallery360_Event_onRotationChange=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16,prop5"; 
+			s.eVar11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop11= this.brandVar() +": vehicle: gallery: 360"; 
+			s.prop5= "rotate: " + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": vehicle: gallery: 360: rotate: "+ this.nameplate());
+		 }
+		 oMetricsTracker.itemDetailFlip=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "item detail: "+this.itemDetailName(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': vehicle: item detail: '+this.itemDetailName()+': ' + this.nameplate());
+		 }
+		 oMetricsTracker.comparePrint=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16"; 
+			s.eVar11= this.brandVar() +": vehicle: compare: print:" + this.nameplate(); 
+			s.prop11= this.brandVar() +": vehicle: compare: print:" + this.nameplate(); 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': vehicle: compare: print:' + this.nameplate());
+		 }
+		 oMetricsTracker.carouselIndexClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: carousel" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: carousel: index: ' + this.nameplate());
+		 }
+		 oMetricsTracker.carouselArrowClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: carousel" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: carousel: index: ' + this.nameplate());
+		 }
+		 oMetricsTracker.home360popup=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,eVar11,prop11,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: 360 popup" 
+			s.prop11= "fv: vehicle: home" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: 360 popup: ' + this.nameplate());
+		 }
+		 oMetricsTracker.home360rotateClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: 360 rotate" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: 360 rotate: ' + this.nameplate());
+		 }
+		 oMetricsTracker.vhp360popup=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,eVar11,prop11,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: 360 popup" 
+			s.prop11= "fv: vehicle: home" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: 360: popup: ' + this.nameplate());
+		 }
+		 oMetricsTracker.vhp360close=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,eVar11,prop11,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: 360 popup: close" 
+			s.prop11= "fv: vehicle: home" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: 360: popup: close: ' + this.nameplate());
+		 }
+		 oMetricsTracker.vhp360rotateClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: 360 rotate" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: 360: rotate: ' + this.nameplate());
+		 }
+		 oMetricsTracker.vhpSocialFacebook=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,eVar11,prop11,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: social: facebook" 
+			s.prop11= "fv: vehicle: home" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: exit: social: ' + this.nameplate());
+		 }
+		 oMetricsTracker.vhpSocialTwitter=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,eVar11,prop11,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: social: twitter" 
+			s.prop11= "fv: vehicle: home" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: exit: social: ' + this.nameplate());
+		 }
+		 oMetricsTracker.vhpSocialYoutube=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,eVar11,prop11,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: social: youtube" 
+			s.prop11= "fv: vehicle: home" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: exit: social: ' + this.nameplate());
+		 }
+		 oMetricsTracker.exteriorColorizer=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: colorizer: exterior" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: colorizer: exterior: ' + this.nameplate());
+		 }
+		 oMetricsTracker.interiorColorizer=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "home: colorizer: interior" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: colorizer: interior: ' + this.nameplate());
+		 }
+		 oMetricsTracker.fullGuidedTourViewed=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16,events"; 
+			s.prop5= "video: full" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.fullVideoType());
+		 }
+		 oMetricsTracker.fiestaMovementClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,prop5,prop6,eVar6,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16"; 
+			s.eVar11= "fv: vehicle: interstitial"; 
+			s.prop11= "fv: vehicle: interstitial"; 
+			s.prop5= "fv: interstitial"; 
+			s.prop6= "fmv: home"; 
+			s.eVar6= "fmv: home"; 
+			s.events= "event4"; 
+			s.linkTrackEvents= "event4"; 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o','referral: exit');
+		 }
+		 oMetricsTracker.ironmanClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,prop5,prop6,eVar6,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16"; 
+			s.eVar11= "fv: vehicle: interstitial: ironman"; 
+			s.prop11= "fv: vehicle: interstitial: ironman"; 
+			s.prop5= "fv: interstitial: ironman: exit: www.dailymile.com"; 
+			s.prop6= "fmv: home"; 
+			s.eVar6= "fmv: home"; 
+			s.events= "event4"; 
+			s.linkTrackEvents= "event4"; 
+			s.channel= "vehicle";
+			s.hier1=  "vehicle:interstitial:2011:crossover:ford edge";
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o','exit');
+		 }
+		 oMetricsTracker.fordedgeNameplateClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,prop5,prop6,eVar6,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16"; 
+			s.eVar11= "fv: vehicle: interstitial: ironman"; 
+			s.prop11= "fv: vehicle: interstitial: ironman"; 
+			s.prop5= "fv: interstitial: ford edge: vhp"; 
+			s.prop6= "fv: interstitial: ford edge: vhp"; 
+			s.eVar6= "fv: interstitial: ford edge: vhp"; 
+			s.eVar16= "ford edge"; 
+			s.prop16= "ford edge"; 
+			s.events= "event4"; 
+			s.linkTrackEvents= "event4"; 
+			s.channel= "vehicle";
+			s.hier1=  "vehicle:interstitial:2011:crossover:ford edge";
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+
+
+			s.tl(this,'o','fv: interstitial: ford edge: vhp');
+		 }
+		 oMetricsTracker.fiestaNameplateClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,prop5,prop6,eVar6,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16"; 
+			s.eVar11= "fv: vehicle: interstitial"; 
+			s.prop11= "fv: vehicle: interstitial"; 
+			s.prop5= "fv: interstitial: vhp"; 
+			s.prop6= "fv: vhp"; 
+			s.eVar6= "fv: vhp"; 
+			s.events= "event4"; 
+			s.linkTrackEvents= "event4"; 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o','fv: interstitial: fiesta vhp');
+		 }
+		 oMetricsTracker.focus4doorClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,prop5,prop6,eVar6,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16"; 
+			s.pageName=this.brandVar()  + ": vehicle: special offer: ford focus"; 
+			s.hier1=  "vehicle:2012:cars:ford focus";
+			s.prop5= "pdf download: 4door"; 
+			s.eVar11= this.brandVar()  + ": vehicle: special offer"; 
+			s.prop11= this.brandVar()  + ": vehicle: special offer"; 
+			s.eVar12= "2012"; 
+			s.prop12= "2012"; 
+			s.eVar16= "ford focus"; 
+			s.prop16= "ford focus"; 
+			s.channel= "vehicle"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+
+
+			s.tl(this,'d','fv: special offer: download: ford focus');
+		 }
+		 oMetricsTracker.focus5doorClick=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,prop5,prop6,eVar6,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop11,eVar11,eVar14,prop14,channel,eVar16,prop16"; 
+			s.pageName=this.brandVar()  + ": vehicle: special offer: ford focus"; 
+			s.hier1=  "vehicle:2012:cars:ford focus";
+			s.prop5= "pdf download: 5door"; 
+			s.eVar11= this.brandVar()  + ": vehicle: special offer"; 
+			s.prop11= this.brandVar()  + ": vehicle: special offer"; 
+			s.eVar12= "2012"; 
+			s.prop12= "2012"; 
+			s.eVar16= "ford focus"; 
+			s.prop16= "ford focus"; 
+			s.channel= "vehicle"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+
+
+			s.tl(this,'d','fv: special offer: download: ford focus');
+		 }
+		 oMetricsTracker.engineDetails=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "model compare: engine" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': model compare: engine: ' + this.nameplate());
+		 }
+		 oMetricsTracker.cabDetails=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "model compare: cab" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': model compare: cab: ' + this.nameplate());
+		 }
+		 oMetricsTracker.driveTrainDetails=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "model compare: drivetrain" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': model compare: drivetrain: ' + this.nameplate());
+		 }
+		 oMetricsTracker.axleRationDetails=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "model compare: axle ration" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': model compare: axle ration: ' + this.nameplate());
+		 }
+		 oMetricsTracker.boxDetails=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "model compare: box" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': model compare: box: ' + this.nameplate());
+		 }
+		 oMetricsTracker.FinancePrint=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "22vehicle pricing: print finance estimate" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': vehicle pricing: print finance estimate: ' + this.nameplate());
+		 }
+		 oMetricsTracker.LeasePrint=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "vehicle pricing: print lease estimate" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': vehicle pricing: print lease estimate: ' + this.nameplate());
+		 }
+		 oMetricsTracker.viewEnlargedImage=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,prop11,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "vehicle pricing: view image" 
+			s.prop11= "fv: vehicle: pricing" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': vehicle pricing: view image: ' + this.nameplate());
+		 }
+		 oMetricsTracker.liveSearchAsk=function(){
+			 this.clearVars();
+			s.linkTrackVars= "eVar35,prop21,hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,prop34,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16,eVar48,eVar49,prop48,prop49,events"; 
+			s.prop5= "microsite: ford explorer: ask" 
+			s.eVar11= "fv: vehicle: home: ford explorer" 
+			s.prop11= "fv: vehicle: home: ford explorer" 
+			s.eVar48= "question" 
+			s.prop48= "question" 
+			s.eVar49= "explorer vhp" 
+			s.prop49= "explorer vhp" 
+			s.events= "event43"; 
+			s.linkTrackEvents= "event43"; 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: microsite: ' + this.nameplate());
+		 }
+		 oMetricsTracker.liveSearchJoin=function(){
+			 this.clearVars();
+			s.linkTrackVars= "eVar35,prop21,hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,prop34,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.eVar11= "fv: vehicle: home: ford explorer" 
+			s.prop11= "fv: vehicle: home: ford explorer" 
+			s.prop5= "microsite: ford explorer: join" 
+			pev2= "fv: home: microsite: ford explorer" 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': home: microsite: ' + this.nameplate());
+		 }
+		 oMetricsTracker.liveSearchAskResults=function(){
+			 this.clearVars();
+			s.linkTrackVars= "eVar35,prop21,hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,prop34,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16,eVar48,eVar49,prop48,prop49,events"; 
+			s.prop5= "exp explorer: submit question: ask" 
+			pev2= "fv: exp explorer: submit question" 
+			s.eVar11= "fv: exp explorer: landing" 
+			s.prop11= "fv: exp explorer: landing" 
+			s.eVar48="question"
+			s.prop48="question"
+			s.eVar49="experience layer"
+			s.prop49="experience layer"
+			s.events= "event43"; 
+			s.linkTrackEvents= "event43"; 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': exp explorer: submit question');
+		 }
+		 oMetricsTracker.liveSearchAll=function(){
+			 this.clearVars();
+			s.pageName=this.brandVar()  + ": vehicle: "+ td_getinputValue()
+			s.linkTrackVars= "eVar35,prop21,hier1,eVar11,prop11,eVar12,prop12,eVar15,prop15,eVar4,prop4,prop34,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16,events"; 
+			s.prop5= "microsite: ford explorer: search all" 
+			s.eVar11= "fv: exp explorer: landing" 
+			s.prop11= "fv: exp explorer: landing" 
+			s.eVar48= "question" 
+			s.prop48= "question" 
+			s.eVar49= "explorer vhp" 
+			s.prop49= "explorer vhp" 
+			s.events= "event43"; 
+			s.linkTrackEvents= "event43"; 
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': microsite: ' + this.nameplate());
+		 }
+		 oMetricsTracker.naturalSearchResult=function(){
+			 this.clearVars();
+			s.linkTrackVars= "eVar35,prop21,hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,prop34,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "site search result: natural" 
+			s.eVar35=  this.getSearchCurrentResultNumber() + ':' + this.searchTotalResults() ;
+			s.prop31=  this.getSearchCurrentResultNumber() + ':' + this.searchTotalResults() ;
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': site search: search index: ' + this.nameplate());
+		 }
+		 oMetricsTracker.bestBetsResult=function(){
+			 this.clearVars();
+			s.linkTrackVars= "eVar35,prop21,hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,prop34,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.prop5= "site search result: best bet" 
+			s.eVar35=  this.getSearchCurrentResultNumber() + ':' + this.bestBetsResults() ;
+			s.prop31=  this.getSearchCurrentResultNumber() + ':' + this.bestBetsResults() ;
+
+			s.hier1= this.siteLevel() 
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+			s.channel= this.siteSection(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': site search: search index ' + this.nameplate());
+		 }
+		 oMetricsTracker.seoOnClickIntoFV=function(){
+			 this.clearVars();
+			s.hier1= this.siteLevel() + ":" + this.getSEO_Category() + ":" + this.getSEO_Link() ; 
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16,eVar11,prop11,eVar48,prop48,eVar49,prop49,events"; 
+			s.channel= "lp" 
+			s.prop5= "lp:" + this.getSEO_Segment() + ":" + this.getSEO_SubSegment() + ":" + this.getSEO_Category() + ":" + this.getSEO_Link(); 
+			s.eVar11= this.getSEO_ClickType(); 
+			s.prop11= this.getSEO_ClickType(); 
+			s.eVar48= "lp:" + this.getSEO_Segment() + ":click" 
+			s.prop48= "lp:" + this.getSEO_Segment() + ":click" 
+			s.eVar49= this.getSEO_Category() + ":" + this.getSEO_Link(); 
+			s.prop49= this.getSEO_Category() + ":" + this.getSEO_Link(); 
+			s.events= "event43"; 
+			s.linkTrackEvents= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o', this.getSEO_ClickType());
+		 }
+		 oMetricsTracker.seoFuelOnClickIntoFV=function(){
+			 this.clearVars();
+			s.hier1= "lp:fuel-econ:bic:" + this.getSEO_Category() + ":" + this.getSEO_Link() ; 
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16,eVar11,prop11,eVar48,prop48,eVar49,prop49,events"; 
+			s.channel= "lp" 
+			s.prop5= "lp:" + this.getSEO_Segment() + ":" + this.getSEO_SubSegment() + ":" + this.getSEO_Category() + ":" + this.getSEO_Link(); 
+			s.eVar11= this.getSEO_ClickType(); 
+			s.prop11= this.getSEO_ClickType(); 
+			s.eVar48= "lp:" + this.getSEO_Segment() + ":click" 
+			s.prop48= "lp:" + this.getSEO_Segment() + ":click" 
+			s.eVar49= this.getSEO_Category() + ":" + this.getSEO_Link(); 
+			s.prop49= this.getSEO_Category() + ":" + this.getSEO_Link(); 
+			s.events= "event43"; 
+			s.linkTrackEvents= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o', this.getSEO_ClickType());
+		 }
+		 oMetricsTracker.brochuresOnLoadDownload=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,channel,eVar12,prop12,eVar15,prop15,eVar17,eVar28,prop18,prop20,eVar4,prop4,eVar9,prop9,eVar5,prop5,eVar14,prop14,eVar16,prop16,eVar11,prop11,events"; 
+			s.pageName= this.brandVar() + ":vehicle:brochures:pdf:confirm:" + this.brochuresNameplate() 
+			s.hier1= "shopping tools:brochures:" + this.brochuresModelYear() + ":" + this.brochuresModelCategory() + ":" + this.brochuresNameplate() 
+			s.channel= "brochures" 
+			s.eVar11= this.brandVar() + ":vehicle:brochures:pdf:confirm" 
+			s.prop11= this.brandVar() + ":vehicle:brochures:pdf:confirm" 
+			s.prop12= this.brochuresModelYear() 
+			s.eVar12= this.brochuresModelYear() 
+			s.prop16= this.brochuresNameplate() 
+			s.eVar16= this.brochuresNameplate() 
+			s.eVar28= "brochure: anonymous: pdf" 
+			s.prop18= "brochure: anonymous: pdf" 
+			s.events= "event15"; 
+			s.linkTrackEvents= "event15"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+
+			dartTracker.trackEvent('ebr', this.brochuresNameplate(), 1, this.advertiseID(), '');
+			dartTracker.trackEventsEfficient('ebr');
+
+			void(s.t());
+		 }
+		 oMetricsTracker.brochuresOnClickDownload=function(){
+			 this.clearVars();
+			s.hier1= "shopping tools:brochures" 
+			s.linkTrackVars= "hier1,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16,eVar11,prop11,eVar48,prop48,eVar49,prop49,eVar30,prop30,events"; 
+			s.channel= "brochures" 
+			s.prop5= "brochure download" 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+			dartTracker.trackEvent('downld', this.brochuresNameplate(), 1, this.advertiseID(), '');
+			dartTracker.trackEventsEfficient('downld');
+
+			s.tl(this,'o', 'fv:brochures:pdf confirm:brochure download');
+		 }
+		 oMetricsTracker.commBrochuresOnLoadDownload=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,channel,eVar12,prop12,eVar15,prop15,eVar17,eVar28,prop18,prop20,eVar4,prop4,eVar9,prop9,eVar5,prop5,eVar14,prop14,eVar16,prop16,eVar11,prop11,events"; 
+			s.pageName= this.brandVar() + ":vehicle:brochures:pdf:confirm:" + this.commTruckBrochure() 
+			s.hier1= "shopping tools:brochures" 
+			s.channel= "brochures" 
+			s.eVar11= this.brandVar() + ":vehicle:brochures:pdf:confirm" 
+			s.prop11= this.brandVar() + ":vehicle:brochures:pdf:confirm" 
+			s.eVar28= "brochure: anonymous: pdf" 
+			s.prop18= "brochure: anonymous: pdf" 
+			s.events= "event15"; 
+			s.linkTrackEvents= "event15"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+			dartTracker.trackEvent('ebr', this.commTruckBrochure(), 1, this.advertiseID(), '');
+			dartTracker.trackEventsEfficient('ebr');
+
+			void(s.t());
+		 }
+		 oMetricsTracker.brochuresOnLoadEmailContact=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,channel,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,eVar5,prop5,eVar14,prop14,eVar16,prop16,eVar11,prop11"; 
+			s.pageName= this.brandVar() + ":vehicle:brochures:mailed:contact:" + this.brochuresNameplate() 
+			s.hier1= "shopping tools:brochures:" + this.brochuresModelYear() + ":" + this.brochuresModelCategory() + ":" + this.brochuresNameplate() 
+			s.channel= "brochures" 
+			s.eVar11= this.brandVar() + ":vehicle:brochures:mailed:contact" 
+			s.prop12= this.brochuresModelYear() 
+			s.eVar12= this.brochuresModelYear() 
+			s.prop16= this.brochuresNameplate() 
+			s.eVar16= this.brochuresNameplate() 
+			s.prop11= this.brandVar() + ":vehicle:brochures:mailed:contact" 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+
+
+			void(s.t());
+		 }
+		 oMetricsTracker.brochuresOnLoadEmailConfirm=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,channel,eVar12,prop12,eVar15,prop15,eVar17,eVar28,prop18,prop20,eVar4,prop4,eVar9,prop9,eVar5,prop5,eVar14,prop14,eVar16,prop16,eVar11,prop11,events"; 
+			s.pageName= this.brandVar() + ":vehicle:brochures:mailed:confirm:" + this.brochuresNameplate() 
+			s.hier1= "shopping tools:brochures:" + this.brochuresModelYear() + ":" + this.brochuresModelCategory() + ":" + this.brochuresNameplate() 
+			s.channel= "brochures" 
+			s.eVar11= this.brandVar() + ":vehicle:brochures:mailed:confirm" 
+			s.prop11= this.brandVar() + ":vehicle:brochures:mailed:confirm" 
+			s.prop12= this.brochuresModelYear() 
+			s.eVar12= this.brochuresModelYear() 
+			s.prop16= this.brochuresNameplate() 
+			s.eVar16= this.brochuresNameplate() 
+			s.eVar28= "brochure: identified: usps" 
+			s.prop18= "brochure: identified: usps" 
+			s.prop20= "email opt-in full" 
+			s.events= "event5,event10,event13"; 
+			s.linkTrackEvents= "event5,event10,event13"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+
+			dartTracker.trackEvent('eopt', this.brochuresNameplate(), 1, this.advertiseID(), '');
+			dartTracker.trackEvent('br', this.brochuresNameplate(), 1, this.advertiseID(), '');
+			dartTracker.trackEventsEfficient('eopt');
+			dartTracker.trackEventsEfficient('br');
+
+			void(s.t());
+		 }
+		 oMetricsTracker.brochuresOnLoadEmailConfirmNoOpt=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,channel,eVar12,prop12,eVar15,prop15,eVar17,eVar28,prop18,prop20,eVar4,prop4,eVar9,prop9,eVar5,prop5,eVar14,prop14,eVar16,prop16,eVar11,prop11,events"; 
+			s.pageName= this.brandVar() + ":vehicle:brochures:mailed:confirm:" + this.brochuresNameplate() 
+			s.hier1= "shopping tools:brochures:" + this.brochuresModelYear() + ":" + this.brochuresModelCategory() + ":" + this.brochuresNameplate() 
+			s.channel= "brochures" 
+			s.eVar11= this.brandVar() + ":vehicle:brochures:mailed:confirm" 
+			s.prop11= this.brandVar() + ":vehicle:brochures:mailed:confirm" 
+			s.prop12= this.brochuresModelYear() 
+			s.eVar12= this.brochuresModelYear() 
+			s.prop16= this.brochuresNameplate() 
+			s.eVar16= this.brochuresNameplate() 
+			s.eVar28= "brochure: identified: usps" 
+			s.prop18= "brochure: identified: usps" 
+			s.events= "event5,event10"; 
+			s.linkTrackEvents= "event5,event10"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+
+			dartTracker.trackEvent('br', this.brochuresNameplate(), 1, this.advertiseID(), '');
+
+			void(s.t());
+		 }
+		 oMetricsTracker.brochuresError=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,channel,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,eVar5,prop5,eVar14,prop14,eVar16,prop16,eVar11,prop11"; 
+			s.pageName= this.brandVar() + ":vehicle:brochures:error" 
+			s.hier1= "shopping tools:brochures" 
+			s.channel= "brochures" 
+			s.eVar11= this.brandVar() + ":vehicle:brochures:error" 
+			s.prop11= this.brandVar() + ":vehicle:brochures:error" 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			void(s.t());
+		 }
+		 oMetricsTracker.brochuresErrorEmail=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,channel,eVar12,prop12,eVar15,prop15,eVar4,prop4,eVar9,prop9,eVar5,prop5,eVar14,prop14,eVar16,prop16,eVar11,prop11"; 
+			s.pageName= this.brandVar() + ":vehicle:brochures:mailed:contact:error:" + this.brochuresNameplate() 
+			s.hier1= "shopping tools:brochures:" + this.brochuresModelYear() + ":" + this.brochuresModelCategory() + ":" + this.brochuresNameplate() 
+			s.channel= "brochures" 
+			s.eVar11= this.brandVar() + ":vehicle:brochures:mailed:contact:error" 
+			s.prop11= this.brandVar() + ":vehicle:brochures:mailed:contact:error" 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			void(s.t());
+		 }
+		 oMetricsTracker.dealermap=function(){
+			 this.clearVars();
+			s.linkTrackVars= "hier1,eVar12,prop12,prop11,eVar15,prop15,eVar4,prop4,eVar9,prop9,prop5,eVar14,prop14,channel,eVar16,prop16"; 
+			s.channel= "dealerships" 
+			s.hier1= "shopping tools:locate dealer" 
+			s.prop5= this.brandVar() + ": find dealer: map" 
+			s.prop11= this.brandVar() + ":dealerships:results" 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': find dealer: map');
+		 }
+		 oMetricsTracker.fusionCTA=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,prop4,prop5,prop11,eVar12,prop12,eVar14,prop14,prop15,eVar15,eVar16,prop16" 
+			s.channel= "vehicle" 
+			s.hier1= "vehicle:"+this.modelYear()+":"+this.modelCategory()+":"+this.nameplate();
+			s.eVar11= this.brandVar() + ": vehicle: home" 
+			s.prop11= this.brandVar() + ": vehicle: home" 
+			s.prop5= "home: microsite"
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  +": home: microsite: "+this.nameplate());
+		 }
+		 oMetricsTracker.ownersenrollment=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:recent:owner site" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-recent-flmo" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="recent:owner site" 
+			s.prop5= "lp: owner: intercept: recent: owner site" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-recent-flmo" 
+			s.prop48="lp: owners:click" 
+			s.prop49="recent:owner site" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownerspaymentsetup=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:recent:payment setup" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-recent-payset" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="recent:payment setup" 
+			s.prop5= "lp: owner: intercept: recent: payment setup" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-recent-payset" 
+			s.prop48="lp: owners:click" 
+			s.prop49="recent:payment setup" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownerssync=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:recent:sync" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-recent-sync" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="recent:sync" 
+			s.prop5= "lp: owner: intercept: recent: sync" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-recent-sync" 
+			s.prop48="lp: owners:click" 
+			s.prop49="recent:sync" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownerstouch=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:recent:myford touch " 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-recent-mft" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="recent:myford touch " 
+			s.prop5= "lp: owner: intercept: recent: myford touch " 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-recent-mft" 
+			s.prop48="lp: owners:click" 
+			s.prop49="recent:myford touch " 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownerspayment=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:existing:bill pay" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-existing-billpay" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="existing:bill pay" 
+			s.prop5= "lp: owner: intercept: existing: bill pay" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-existing-billpay" 
+			s.prop48="lp: owners:click" 
+			s.prop49="existing:bill pay" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownersmanuals=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:existing:manuals" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-existing-manual" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="existing:manuals" 
+			s.prop5= "lp: owner: intercept: existing: manuals" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-existing-manual" 
+			s.prop48="lp: owners:click" 
+			s.prop49="existing:manuals" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownersservice=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:existing:service" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-existing-service" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="existing:service" 
+			s.prop5= "lp: owner: intercept: existing: service" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-existing-service" 
+			s.prop48="lp: owners:click" 
+			s.prop49="existing:service" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownersnotices=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:existing:recalls" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-existing-recall" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="existing:recalls" 
+			s.prop5= "lp: owner: intercept: existing: recalls" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-existing-recall" 
+			s.prop48="lp: owners:click" 
+			s.prop49="existing:recalls" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownersfinancing=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:considering:financing" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-consider-finance" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="considering:financing" 
+			s.prop5= "lp: owner: intercept: considering: financing" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-consider-finance" 
+			s.prop48="lp: owners:click" 
+			s.prop49="considering:financing" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownersincentives=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:considering:incentives" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-consider-incent" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="considering:incentives" 
+			s.prop5= "lp: owner: intercept: considering: incentives" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-consider-incent" 
+			s.prop48="lp: owners:click" 
+			s.prop49="considering:incentives" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownerstradein=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events,pev2"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:considering:trade-in" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-consider-tradein" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="considering:trade-in" 
+			s.prop5= "lp: owner: intercept: considering: trade-in" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-consider-tradein" 
+			s.prop48="lp: owners:click" 
+			s.prop49="considering:trade-in" 
+			s.events= "event43"; 
+			s.pev2= this.brandVar()  + ': lp: owner intercept: click'; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+		 }
+		 oMetricsTracker.ownerslocatedealer=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:considering:find dealer" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-consider-find" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="considering:find dealer" 
+			s.prop5= "lp: owner: intercept: considering: find dealer" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-consider-find" 
+			s.prop48="lp: owners:click" 
+			s.prop49="considering:find dealer" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownerscontactford=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:contact:ford" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-contact-ford" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="contact:ford" 
+			s.prop5= "lp: owner: intercept: contact: ford" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-contact-ford" 
+			s.prop48="lp: owners:click" 
+			s.prop49="contact:ford" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+		 oMetricsTracker.ownerscontactdealer=function(){
+			 this.clearVars();
+			s.linkTrackVars= "channel,hier1,eVar4,eVar11,eVar14,eVar15,eVar30,eVar48,eVar49,prop4,prop5,prop11,prop14,prop15,prop30,prop48,prop49,events"; 
+			s.channel= "lp" 
+			s.pageName=this.brandVar() + ": lp: owner intercept: click"; 
+			s.hier1= "lp:owner:intercept:contact:dealer" 
+			s.eVar11=this.brandVar() + ": lp: owner intercept: click"; 
+			s.eVar30="fvowner-contact-dealer" 
+			s.eVar48="lp:owners:click" 
+			s.eVar49="contact:dealer" 
+			s.prop5= "lp: owner: intercept: contact: dealer" 
+			s.prop11= this.brandVar() + ": lp: owner intercept: click" 
+			s.prop30="fvowner-contact-dealer" 
+			s.prop48="lp: owners:click" 
+			s.prop49="contact:dealer" 
+			s.events= "event43"; 
+
+			s.eVar4= this.userLanguage(); 
+			s.prop4= this.userLanguage(); 
+			s.eVar9= ""; 
+			s.prop9= ""; 
+			s.eVar12= this.modelYear(); 
+			s.prop12= this.modelYear(); 
+			s.eVar14= this.client(); 
+			s.prop14= this.client(); 
+			s.eVar15= this.site(); 
+			s.prop15= this.site(); 
+			s.eVar16= this.nameplate(); 
+			s.prop16= this.nameplate(); 
+
+
+			s.tl(this,'o',this.brandVar()  + ': lp: owner intercept: click');
+		 }
+
+
+
+

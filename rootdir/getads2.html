@@ -1,0 +1,41 @@
+<!--
+Simple version of getads.html
+-->
+
+Hey<br>
+What up<br>
+This is your max bid ad:<br>
+<div id = "ad"></div>
+
+This is all the ads:<br>
+<div id = "allads"></div>
+
+<script> 
+ads = JSON.parse(localStorage.retarget);
+maxBid = 0;
+maxBidAd = 0;
+
+allads = document.getElementById("allads");
+
+for (ad in ads){
+	adObj = ads[ad];
+
+	domAdObject = document.createElement("img");
+	domAdObject.src = adObj.url;
+
+	allads.appendChild(domAdObject);
+	if (adObj.bid > maxBidAd){
+		maxBid = adObj.bid;
+		maxBidAd = adObj;
+	}
+}
+
+
+adContainer = document.getElementById("ad");
+image = document.createElement("img");
+image.src = adObj.url;
+adContainer.appendChild(image);
+
+
+
+</script>

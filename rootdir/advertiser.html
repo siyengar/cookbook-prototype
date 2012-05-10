@@ -1,0 +1,30 @@
+<!-- 
+A simple page demonstrating the functionality used by an avertiser
+-->
+
+
+
+<html>
+Hey I'm an advertiser foo.com. 
+<br>
+I have a campaign and I'm going to retarget to you from adnetwork.com which is an ad network.
+<br>
+Im also going to help him profile you.
+<br>
+
+
+<iframe id = "adframe"></iframe>
+<iframe id = "trackframe"></iframe>
+
+<script>
+var trackframe = document.getElementById("trackframe");
+var frame = document.getElementById("adframe");
+trackframe.src = 'http://localhost:8001/track/';
+loaded = false;
+trackframe.onload = function(){
+		frame.src = 'http://localhost:8001/retarget/200/';
+		loaded = true;
+}
+</script>
+
+</html>

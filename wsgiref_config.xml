@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+	<type>wsgiref.simple_server</type>
+	<run>
+		<server name = "make_server">
+			<params>
+				<param name = "host" value=""></param>
+					<param name = "port" value="8001" type="int"></param>
+					<param name = "app" value="$application"></param>
+			</params>
+		</server>
+		<start name = "serve_forever">
+		</start>
+	</run>
+</config>

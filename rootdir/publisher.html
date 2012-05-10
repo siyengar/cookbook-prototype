@@ -1,0 +1,15 @@
+<!--
+Simple file to show functionality of a publisher
+-->
+
+Hey im a publisher
+<br>
+Im going to show you ads you dont care for.
+<br>
+
+<iframe id = "ad" width = 500 height = 500></iframe>
+
+<script>
+var frame = document.getElementById("ad");
+frame.src = "http://localhost:8001/getads/";
+</script>

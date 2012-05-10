@@ -1,0 +1,59 @@
+<!--
+Tracks the user behavioral profile by 
+storing the duration of visit on websites having 
+beloning to each behaviroal segment as well as 
+the number of visits.
+-->
+
+<html>
+<script>
+segments = $segments;
+window.onload = function(){
+	loadtime = new Date().getSeconds();
+	setCounters('v', 1);
+}
+
+window.onunload = function(){
+	var unloadtime = new Date().getSeconds();
+	var duration = unloadtime - loadtime;
+	if (duration > 10) duration = 10;
+	else if (duration < 1) duration = 1;
+	setCounters('d', duration);	
+}
+
+function setCounters(counterName, increment){
+	console.log(counterName);
+	var jsonCounter = localStorage[counterName];
+	if (jsonCounter != undefined)
+ 	  var counter = JSON.parse(jsonCounter);
+        else
+          var counter = new Object();
+		
+	var jsonTotal = localStorage['t'];
+	if (jsonTotal != undefined)
+	  var totalCounter = JSON.parse(localStorage['t']);	
+        else
+          var totalCounter = new Object();
+
+	var totalCountForCounter = totalCounter[counterName];
+
+	if (totalCountForCounter == undefined){
+		totalCountForCounter = 0;
+	}
+
+	for (var i in segments){
+		var segment = segments[i];
+		var current_num = counter[segment];
+		if (current_num == undefined){
+			current_num = 0;	
+		}
+		counter[segment] = current_num + increment;
+		++totalCountForCounter;	
+	}
+
+	totalCounter[counterName] = totalCountForCounter;	
+	localStorage[counterName] = JSON.stringify(counter);
+	localStorage['t'] = JSON.stringify(totalCounter);
+}
+</script>
+</html>

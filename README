@@ -1,0 +1,12 @@
+A privacy preserving ad network
+
+To run simply enter:
+./runapp.py config.xml
+
+config.xml and wsgi_config.xml are a part of the flowise framework
+https://github.com/siyengar/flowise
+
+The default configuration will start a server at port 8001.
+
+To view the demo visit localhost:8001/demo/ 
+(the slash at the end is important)

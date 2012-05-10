@@ -1,0 +1,72 @@
+<!--
+This page does 2 actions:
+1. Retreives the image of the advertisement in the url of the image tag
+2. Tracks user clicks and visit durations
+-->
+
+
+
+<img src = "$url" width = 280 height = 180 onclick = "doaction()"></img>
+<a href = "/trackinfo/" target = "_parent"><img src = "/adchoices/"></img></a>
+
+<script>
+//assumes that the user can only click on one tab at a time
+function getSegments(adid){
+	ads = JSON.parse(localStorage.ads);
+	for (var i in ads){
+		ad = ads[i];
+		if (ad.id == adid){
+			return ad;
+		}
+	}
+	return undefined;
+}
+
+// perform a click action
+function doaction(){
+	adid = '$adid';
+	ad = getSegments(adid);
+	if (ad != undefined){
+		setCounters(ad.segments, 'c', 1);
+		alert('ad clicked');
+	} else{
+		console.log('problem');
+	}
+}
+
+// Tracks the user profile via counters
+function setCounters(segments, counterName, increment){
+	console.log(counterName);
+	var jsonCounter = localStorage[counterName];
+	if (jsonCounter != undefined)
+ 	  var counter = JSON.parse(jsonCounter);
+        else
+          var counter = new Object();
+		
+	var jsonTotal = localStorage['t'];
+	if (jsonTotal != undefined)
+	  var totalCounter = JSON.parse(localStorage['t']);	
+        else
+          var totalCounter = new Object();
+
+	var totalCountForCounter = totalCounter[counterName];
+
+	if (totalCountForCounter == undefined){
+		totalCountForCounter = 0;
+	}
+
+	for (var i in segments){
+		var segment = segments[i];
+		var current_num = counter[segment];
+		if (current_num == undefined){
+			current_num = 0;	
+		}
+		counter[segment] = current_num + increment;
+		++totalCountForCounter;	
+	}
+
+	totalCounter[counterName] = totalCountForCounter;	
+	localStorage[counterName] = JSON.stringify(counter);
+	localStorage['t'] = JSON.stringify(totalCounter);
+}
+</script>

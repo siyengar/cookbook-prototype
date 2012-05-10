@@ -1,0 +1,42 @@
+KRUX.configOnload({
+ "publisher": {
+  "name": "New York Times"
+ },
+ "blocklist": [],
+ "tags": [
+  {
+   "provider_id": 9,
+   "name": "IXI provider tag",
+   "format": "0x0",
+   "value": "0.00",
+   "method": "script",
+   "tier": 1,
+   "html": "",
+   "timing": "asap",
+   "id": 10092,
+   "tag_type": "provider"
+  },
+  {
+   "name": "Krux html5 localStorage disabler",
+   "format": "0x0",
+   "value": "None",
+   "method": "script",
+   "tier": 1,
+   "html": "<script>\r\nif(window.localStorage) {\r\n    localStorage.removeItem('kuid');\r\n    localStorage.removeItem('kgeo');\r\n    localStorage.removeItem('kgeo__exp');\r\n    delete KRUX._parameters._kuid;\r\n}\r\n</script>",
+   "timing": "asap",
+   "id": 10098,
+   "tag_type": "publisher"
+  }
+ ],
+ "segments": [],
+ "published_at": "Tue Oct 18 14:54:32 2011",
+ "version": 7,
+ "params": {
+  "capture_leakage": true,
+  "site_level_supertag_config": "all",
+  "max_slot_time": 1000,
+  "capture_js_errors": true
+ },
+ "msg": "Control Tag config for New York Times",
+ "geo":{"COUNTRY":"US", "REGION":"CA", "CITY":"STANFORD", "GEOREGION":"246", "DMA":"807", "PMSA":"7400", "AREACODE":"650", "COUNTY":"SANTACLARA", "FIPS":"06085", "LATITUDE":"37.4162", "LONGITUDE":"-122.1722", "TIMEZONE":"PST", "ZIP":"94305", "CONTINENT":"NA"}
+});
