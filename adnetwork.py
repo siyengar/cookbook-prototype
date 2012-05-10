@@ -10,6 +10,7 @@ import httplib
 This is the file for the ad network server. 
 It uses the WSGI framework.
 
+@author Subodh Iyengar
 """
 
 

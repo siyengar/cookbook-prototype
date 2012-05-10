@@ -5,6 +5,8 @@ framework I created to easily deploy
 applications
 
 https://github.com/siyengar/flowise
+
+@author Subodh Iyengar
 """
 
 
