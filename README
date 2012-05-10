@@ -3,6 +3,8 @@ A privacy preserving ad network
 To run simply enter:
 ./runapp.py config.xml
 
+More on how to set-up the database later
+
 config.xml and wsgi_config.xml are a part of the flowise framework
 https://github.com/siyengar/flowise
 
